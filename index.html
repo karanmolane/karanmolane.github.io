@@ -27,6 +27,76 @@
       margin: 0 10px;
     }
     .links a:hover { text-decoration: underline; }
+    .projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #f0f0f0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: #58a6ff;
+}
+
+.project-card h3 {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #9198a1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tech-tags span {
+  background: #21262d;
+  color: #58a6ff;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.project-links a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: 0.9rem;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
   </style>
 </head>
 <body>
@@ -36,5 +106,39 @@
     <a href="https://github.com/karanmolane" target="_blank">GitHub</a>
     <a href="https://www.linkedin.com/in/karan-molane-113b34425?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
   </div>
+  <section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Student Management System</h3>
+      <p>A full-stack web app for managing student records, built as a team project. Handles CRUD operations with a Flask backend and SQLite database.</p>
+      <div class="tech-tags">
+        <span>Flask</span>
+        <span>SQLite</span>
+        <span>HTML/CSS/JS</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>JARVIS AI Assistant</h3>
+      <p>A desktop AI assistant with voice commands, facial expression detection, and a custom animated HUD interface.</p>
+      <div class="tech-tags">
+        <span>Python</span>
+        <span>Tkinter</span>
+        <span>OpenCV</span>
+        <span>Groq API</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 </body>
 </html>
