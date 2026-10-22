@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Karan Molane (Obito) | MERN Stack Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Karan Molane (Obito) - Computer Science student and aspiring MERN stack freelancer building full-stack and AI projects.">
+<meta property="og:title" content="Karan Molane (Obito) | MERN Stack Developer">
+<meta property="og:description" content="Full-stack projects, Python + AI builds, and freelance availability.">
+<meta property="og:url" content="https://karanmolane.is-a.dev">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--text:#e6edf3;--mute:#8b949e;--acc:#58a6ff;--chip:#21262d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:1.1rem;color:var(--text)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--mute);font-size:.92rem}nav ul a:hover{color:var(--text);text-decoration:none}
+nav .hire{background:var(--acc);color:#0d1117;padding:5px 14px;border-radius:20px;font-weight:600}
+section{max-width:960px;margin:0 auto;padding:80px 20px 10px;text-align:center}
+h2{font-size:2rem;margin:0 0 8px}
+.sub{color:var(--mute);max-width:600px;margin:0 auto 36px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;padding-top:40px}
+.avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#58a6ff,#8957e5);display:grid;place-items:center;font-size:3rem;font-weight:700;color:#0d1117;margin-bottom:10px}
+.hero h1{font-size:2.8rem;margin:0}
+.roles{color:var(--acc);font-size:1.25rem;min-height:1.9rem;margin:0}
+.hero p.lead{color:var(--mute);max-width:560px;margin:6px 0 16px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{padding:10px 22px;border-radius:8px;border:1px solid var(--acc);color:var(--acc);font-weight:600}
+.btn.fill{background:var(--acc);color:#0d1117}.btn:hover{text-decoration:none;opacity:.85}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px;text-align:left;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--acc)}
+.cat{display:inline-block;background:var(--chip);color:var(--acc);font-size:.75rem;padding:3px 10px;border-radius:20px;margin-bottom:10px}
+.card h3{margin:0 0 8px}.card p{color:#9198a1;font-size:.95rem;margin:0 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.tags span{background:var(--chip);color:var(--acc);font-size:.8rem;padding:4px 10px;border-radius:20px}
+.status{color:var(--mute);font-size:.85rem;font-style:italic}
+.skillgroup{text-align:left;margin-bottom:26px}
+.skillgroup h3{font-size:1.05rem;margin:0 0 12px;color:#f0f0f0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:20px;font-size:.9rem}
+.chip img{width:20px;height:20px}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.res a.card{color:var(--text);text-align:center}.res a.card:hover{text-decoration:none}
+.res .ic{font-size:1.8rem}.res small{color:var(--mute);display:block;margin-top:4px}
+.offer .card{text-align:center;cursor:pointer;font:inherit;color:var(--text);width:100%}
+.offer .ic{font-size:2rem}
+form{max-width:560px;margin:0 auto;display:grid;gap:14px;text-align:left}
+label{font-size:.9rem;color:var(--mute)}
+input,textarea,select{width:100%;margin-top:4px;padding:10px 12px;background:var(--card);border:1px solid var(--line);border-radius:8px;color:var(--text);font:inherit}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--acc)}
+button.btn{cursor:pointer;background:var(--acc);color:#0d1117;border:0;font:inherit;font-weight:600}
+.social{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+footer{padding:60px 20px 30px;text-align:center;color:var(--mute);font-size:.85rem}
+@media(max-width:640px){nav ul{display:none}.hero h1{font-size:2.2rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="#home">Obito</a>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a class="hire" href="#hire">Hire Me</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <div class="avatar">K</div>
+  <h1>Karan Molane <span style="color:var(--mute);font-weight:400">(Obito)</span></h1>
+  <p class="roles" id="roles">MERN Stack Developer</p>
+  <p class="lead">Second-year B.Tech Computer Science student from Karmala, Maharashtra. I build full-stack web apps and Python + AI projects, and I'm getting ready to take on freelance work.</p>
+  <div class="btns">
+    <a class="btn fill" href="#contact">Let's Talk</a>
+    <a class="btn" href="#projects">View Projects</a>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <p class="sub">Things I've built while learning - web apps, AI tools and team projects.</p>
+  <div class="grid">
+    <div class="card">
+      <span class="cat">AI / Desktop</span>
+      <h3>JARVIS AI Assistant</h3>
+      <p>Voice-controlled desktop assistant with app launching, system monitoring, long-term memory and a custom animated Iron Man-style HUD.</p>
+      <div class="tags"><span>Python</span><span>Tkinter</span><span>OpenCV</span><span>Groq API</span></div>
+      <a href="https://github.com/karanmolane/jarvis-ai-assistant" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+    <div class="card">
+      <span class="cat">Full Stack</span>
+      <h3>Student Management System</h3>
+      <p>Team project for managing student records with CRUD operations, backed by full SRS and project report documentation.</p>
+      <div class="tags"><span>Flask</span><span>SQLite</span><span>HTML/CSS/JS</span></div>
+      <span class="status">Repo coming soon</span>
+    </div>
+    <div class="card">
+      <span class="cat">Web App</span>
+      <h3>Zippy Dispatch</h3>
+      <p>Responsive delivery service website with a clean landing page and service sections.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span></div>
+      <span class="status">Repo coming soon</span>
+    </div>
+    <div class="card">
+      <span class="cat">Concept / Marketplace</span>
+      <h3>SERV-ALL</h3>
+      <p>A universal servicing marketplace ("Uber for servicing") for gadgets, appliances and vehicles, with real-time bidding that shows the top 3 offers from nearby shops.</p>
+      <div class="tags"><span>FastAPI</span><span>PostgreSQL</span><span>WebSockets</span><span>React Native</span></div>
+      <span class="status">Concept / in design</span>
+    </div>
+    <div class="card">
+      <span class="cat">Full Stack</span>
+      <h3>Cafe Management System</h3>
+      <p>A cafe management web app, planned along the lines of the Student Management System, with documentation in progress.</p>
+      <div class="tags"><span>Python</span><span>Web</span></div>
+      <span class="status">In progress</span>
+    </div>
+    <div class="card">
+      <span class="cat">Computer Vision</span>
+      <h3>CCTV Smart Attendance System</h3>
+      <p>Concept design for automatic attendance from CCTV feeds using face detection and recognition, with embeddings stored in a vector database.</p>
+      <div class="tags"><span>YOLOv8</span><span>ArcFace</span><span>PostgreSQL</span><span>pgvector</span></div>
+      <span class="status">Concept / in design</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills &amp; Expertise</h2>
+  <p class="sub">What I work with and what I'm currently learning.</p>
+  <div class="skillgroup"><h3>Web Development</h3><div class="chips">
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">HTML5</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">CSS3</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</div>
+  </div></div>
+  <div class="skillgroup"><h3>MERN Stack (learning)</h3><div class="chips">
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">MongoDB</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" style="filter:invert(1)">Express</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">React</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">Node.js</div>
+  </div></div>
+  <div class="skillgroup"><h3>Python &amp; AI</h3><div class="chips">
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">Python</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="" style="filter:invert(1)">Flask</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="">OpenCV</div>
+    <div class="chip">LLM APIs (Groq)</div>
+  </div></div>
+  <div class="skillgroup"><h3>Databases, Core &amp; Tools</h3><div class="chips">
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="">SQLite</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="">C (DSA)</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</div>
+    <div class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" style="filter:invert(1)">GitHub</div>
+  </div></div>
+</section>
+
+<section id="resources">
+  <h2>Resources</h2>
+  <p class="sub">Quick links if you want to learn more about me or connect.</p>
+  <div class="res">
+    <a class="card" href="Karan_Molane_Resume.pdf" target="_blank" rel="noopener"><div class="ic">📄</div>Resume<small>Open my latest resume</small></a>
+    <a class="card" href="https://github.com/karanmolane" target="_blank" rel="noopener"><div class="ic">🐙</div>GitHub<small>Repos and experiments</small></a>
+    <a class="card" href="https://www.linkedin.com/in/karan-molane-113b34425" target="_blank" rel="noopener"><div class="ic">💼</div>LinkedIn<small>Professional profile</small></a>
+    <a class="card" href="https://x.com/KaranMolane" target="_blank" rel="noopener"><div class="ic">🐦</div>X (Twitter)<small>Updates and thoughts</small></a>
+    <a class="card" href="https://www.freelancer.com/u/karan2467" target="_blank" rel="noopener"><div class="ic">🧑‍💻</div>Freelancer<small>Hire me for projects</small></a>
+  </div>
+</section>
+
+<section id="hire" class="offer">
+  <h2>Work With Me</h2>
+  <p class="sub">Open to internships and freelance projects. Pick one and tell me what you need.</p>
+  <div class="grid">
+    <a class="card" href="#contact" onclick="setType('Internship / Job')"><div class="ic">💼</div><h3>Internship / Job</h3><p>Opportunity at your company.</p></a>
+    <a class="card" href="#contact" onclick="setType('Freelance project')"><div class="ic">⭐</div><h3>Freelance</h3><p>Websites and full-stack apps, project-based.</p></a>
+    <a class="card" href="#contact" onclick="setType('Collaboration')"><div class="ic">🤝</div><h3>Collaborate</h3><p>Open-source or team projects.</p></a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Drop A Message</h2>
+  <p class="sub">Send me a message and I'll reply to your email.</p>
+  <form id="f">
+    <label>Your Name *<input id="n" required></label>
+    <label>Your Email *<input id="e" type="email" required></label>
+    <label>Enquiry Type
+      <select id="t"><option>General</option><option>Internship / Job</option><option>Freelance project</option><option>Collaboration</option></select>
+    </label>
+    <label>Message *<textarea id="m" rows="5" required></textarea></label>
+    <input type="checkbox" id="bot" style="display:none" tabindex="-1" autocomplete="off">
+    <button class="btn" id="sb" type="submit">Send Message</button>
+    <p id="status" style="text-align:center;margin:0"></p>
+  </form>
+</section>
+
+<section id="connect">
+  <h2>Connect With Me</h2>
+  <div class="social">
+    <a href="https://github.com/karanmolane" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/karan-molane-113b34425" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/KaranMolane" target="_blank" rel="noopener">X</a>
+    <a href="https://www.freelancer.com/u/karan2467" target="_blank" rel="noopener">Freelancer</a>
+  </div>
+</section>
+
+<footer>&copy; 2026 Karan Molane &middot; Karmala, Maharashtra, India</footer>
+
+<script>
+var ACCESS_KEY="58b8d730-ac88-4321-b60d-54effaf38912";
+function setType(v){document.getElementById('t').value=v}
+document.getElementById('f').addEventListener('submit',function(x){
+  x.preventDefault();
+  var st=document.getElementById('status'),sb=document.getElementById('sb');
+  if(document.getElementById('bot').checked)return;
+  sb.disabled=true;sb.textContent='Sending...';st.style.color='#8b949e';st.textContent='';
+  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+    body:JSON.stringify({access_key:ACCESS_KEY,subject:'Portfolio enquiry: '+t.value,from_name:'Portfolio',name:n.value,email:e.value,type:t.value,message:m.value})})
+  .then(function(r){return r.json()})
+  .then(function(d){
+    if(d.success){st.style.color='#3fb950';st.textContent='Message sent! I will reply soon.';document.getElementById('f').reset();}
+    else{throw new Error(d.message)}
+  })
+  .catch(function(){st.style.color='#f85149';st.innerHTML='Could not send. Please email me at <a href="mailto:karanmolane0@gmail.com">karanmolane0@gmail.com</a>.';})
+  .finally(function(){sb.disabled=false;sb.textContent='Send Message';});
+});
+var roles=['MERN Stack Developer','Python & AI Builder','Freelancer in the making'],i=0,el=document.getElementById('roles');
+setInterval(function(){i=(i+1)%roles.length;el.textContent=roles[i]},2500);
+</script>
+</body>
+</html>
