@@ -1,5 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+  .hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6vw;
+    color: #f0f6ff;
+    background:
+      linear-gradient(90deg, rgba(4,6,14,.88) 0%, rgba(4,6,14,.55) 45%, rgba(4,6,14,.15) 100%),
+      url("images/hero-bg.webp") center / cover no-repeat;
+  }
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero-photo {
+    width: 180px;
+    height: 180px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5abeff;
+    box-shadow: 0 0 28px rgba(90, 190, 255, .35);
+  }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 0 0 6px; }
+  .hero .role { color: #5abeff; font-size: 1.25rem; margin: 0 0 10px; }
+  .hero .tagline { color: #b9c6dc; margin: 0 0 22px; max-width: 46ch; }
+  .hero .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: #e63c50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  .hero .btn.ghost { background: transparent; border: 2px solid #5abeff; color: #5abeff; }
+
+  @media (max-width: 720px) {
+    .hero { padding: 56px 20px; text-align: center;
+      background:
+        linear-gradient(180deg, rgba(4,6,14,.75), rgba(4,6,14,.9)),
+        url("images/hero-bg.webp") 62% center / cover no-repeat; }
+    .hero-inner { flex-direction: column; gap: 22px; }
+    .hero-photo { width: 140px; height: 140px; }
+    .hero .btn { margin: 6px 4px; }
+  }
+</style>
+  <head>portfolio-snippet.html</head>
 <head>
 <meta charset="UTF-8">
 <title>Karan Molane (Obito) | MERN Stack Developer</title>
@@ -232,4 +287,21 @@ var roles=['MERN Stack Developer','Python & AI Builder','Freelancer in the makin
 setInterval(function(){i=(i+1)%roles.length;el.textContent=roles[i]},2500);
 </script>
 </body>
+  <section class="hero" id="home">
+  <div class="hero-inner">
+    <picture>
+      <source srcset="images/profile.webp" type="image/webp">
+      <img class="hero-photo" src="images/profile.jpg"
+           alt="Portrait of Karan Molane, full-stack web developer"
+           width="180" height="180">
+    </picture>
+    <div>
+      <h1>Karan Molane</h1>
+      <p class="role">Full-Stack Web Developer | MERN Stack</p>
+      <p class="tagline">I build clean, responsive web apps with React and Node.js. Open to remote work.</p>
+      <a class="btn" href="#contact">Hire me</a>
+      <a class="btn ghost" href="#projects">See my work</a>
+    </div>
+  </div>
+</section>
 </html>
